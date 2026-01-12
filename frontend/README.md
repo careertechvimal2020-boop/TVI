@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+# Tech Vimal International - Inspection & Certification Portal
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Official website for **Tech Vimal International Inspection & Certification Pvt. Ltd.** - India's Most Trusted Inspection & Certification Body.
 
-## Available Scripts
+## 🏢 About
 
-In the project directory, you can run:
+Tech Vimal International is a technology-enabled, compliance-focused entity dedicated to serving MSMEs, startups, exporters, and manufacturers across India. We provide inspection, audit, and certification services that create measurable business impact.
 
-### `npm start`
+## 🚀 Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Certificate Verification** - QR code-based public verification system
+- **Digital Dashboard** - Real-time compliance tracking
+- **ISO Certification Services** - Complete certification from gap analysis to final certification
+- **Third-Party Inspection** - Comprehensive on-site inspections
+- **Audit Services** - Thorough assessment of processes and systems
+- **Hygiene Rating** - Food safety and hygiene rating services
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Tech Stack
 
-### `npm test`
+- **React 19** - Modern React with latest features
+- **Vite** - Next-generation frontend tooling
+- **Tailwind CSS** - Utility-first CSS framework
+- **Radix UI** - Accessible component primitives
+- **Lucide React** - Beautiful icons
+- **React Router** - Client-side routing
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📦 Installation
 
-### `npm run build`
+```bash
+# Install dependencies
+npm install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Start development server
+npm run dev
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Build for production
+npm run build
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Preview production build
+npm run preview
+```
 
-### `npm run eject`
+## 🌐 Environment Variables
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Create a `.env` file in the root directory:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```env
+VITE_API_URL=your_api_url_here
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📁 Project Structure
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+frontend/
+├── public/              # Static assets
+│   └── favicon.svg      # Site favicon
+├── src/
+│   ├── components/      # Reusable UI components
+│   │   └── ui/          # Base UI components (Button, Card, etc.)
+│   ├── hooks/           # Custom React hooks
+│   ├── lib/             # Utility libraries
+│   ├── pages/           # Page components
+│   ├── utils/           # Utility functions and data
+│   ├── App.jsx          # Main application component
+│   ├── App.css          # Application styles
+│   ├── index.jsx        # Application entry point
+│   └── index.css        # Global styles with Tailwind
+├── index.html           # HTML template
+├── vite.config.js       # Vite configuration
+├── tailwind.config.js   # Tailwind CSS configuration
+└── package.json         # Project dependencies
+```
 
-## Learn More
+## 🎨 Design System
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The application uses a custom design system with:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Primary Color**: Blue (#1e3a5f to #2563eb gradient)
+- **Typography**: Inter font family
+- **Border Radius**: 0.5rem default
+- **Glassmorphism effects** for modern UI elements
 
-### Code Splitting
+## 📄 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+© 2024 Tech Vimal International Inspection & Certification Pvt. Ltd. All rights reserved.
 
-### Analyzing the Bundle Size
+## 📞 Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Website**: [techvimal.com](https://techvimal.com)
+- **Email**: info@techvimal.com
+- **Location**: Mumbai, Maharashtra, India

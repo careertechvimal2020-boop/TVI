@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { 
-  Shield, 
-  CheckCircle, 
-  Globe, 
-  Award, 
-  BarChart, 
-  Wifi, 
-  Calendar, 
-  CreditCard, 
+import {
+  CheckCircle,
+  Globe,
+  Award,
+  BarChart,
+  Wifi,
+  Calendar,
+  CreditCard,
   QrCode,
   ArrowRight,
   Factory,
@@ -61,13 +60,15 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
-              <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-br from-blue-900 to-blue-700 rounded-lg">
-                <Shield className="w-7 h-7 text-white" />
-              </div>
-              <div>
+              <img
+                src="/Tech_Vimal_International.webp"
+                alt="Tech Vimal International Logo"
+                className="w-16 h-16 object-cover"
+              />
+              {/* <div>
                 <h1 className="text-xl font-bold text-slate-900">Tech Vimal</h1>
                 <p className="text-xs text-slate-600">International Certification</p>
-              </div>
+              </div> */}
             </div>
             <div className="hidden md:flex items-center space-x-8">
               <a href="#home" className="text-slate-700 hover:text-blue-900 font-medium transition-colors">Home</a>
@@ -112,8 +113,8 @@ const Home = () => {
             </div>
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 to-transparent rounded-3xl blur-3xl"></div>
-              <img 
-                src="https://images.unsplash.com/photo-1748255882537-cbe88b145305" 
+              <img
+                src="https://images.unsplash.com/photo-1748255882537-cbe88b145305"
                 alt="Quality Inspection"
                 className="relative rounded-3xl shadow-2xl w-full object-cover h-[500px]"
               />
@@ -179,13 +180,13 @@ const Home = () => {
             </div>
             <div className="relative">
               <div className="grid grid-cols-2 gap-4">
-                <img 
-                  src="https://images.pexels.com/photos/8201183/pexels-photo-8201183.jpeg" 
+                <img
+                  src="https://images.pexels.com/photos/8201183/pexels-photo-8201183.jpeg"
                   alt="Inspection"
                   className="rounded-2xl shadow-xl object-cover h-64"
                 />
-                <img 
-                  src="https://images.pexels.com/photos/5778658/pexels-photo-5778658.jpeg" 
+                <img
+                  src="https://images.pexels.com/photos/5778658/pexels-photo-5778658.jpeg"
                   alt="Audit"
                   className="rounded-2xl shadow-xl object-cover h-64 mt-8"
                 />
@@ -209,8 +210,8 @@ const Home = () => {
             {mockData.services.map((service, index) => (
               <Card key={index} className="group hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-0 bg-white">
                 <div className="overflow-hidden rounded-t-xl">
-                  <img 
-                    src={service.image} 
+                  <img
+                    src={service.image}
                     alt={service.title}
                     className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
                   />
@@ -224,7 +225,7 @@ const Home = () => {
                 </CardHeader>
                 <CardContent>
                   <Button variant="link" className="text-blue-900 p-0 group-hover:gap-2 transition-all">
-                    Learn More 
+                    Learn More
                     <ArrowRight className="w-4 h-4 ml-1 group-hover:ml-2 transition-all" />
                   </Button>
                 </CardContent>
@@ -268,7 +269,7 @@ const Home = () => {
           </p>
           <form onSubmit={handleVerification} className="max-w-xl mx-auto">
             <div className="flex gap-4">
-              <Input 
+              <Input
                 type="text"
                 placeholder="Enter Certificate ID (e.g., CERT-2024-001)"
                 value={certificateId}
@@ -389,45 +390,45 @@ const Home = () => {
               <CardContent>
                 <form onSubmit={handleContactSubmit} className="space-y-4">
                   <div>
-                    <Input 
+                    <Input
                       placeholder="Your Name"
                       value={contactForm.name}
-                      onChange={(e) => setContactForm({...contactForm, name: e.target.value})}
+                      onChange={(e) => setContactForm({ ...contactForm, name: e.target.value })}
                       required
                       className="h-12"
                     />
                   </div>
                   <div>
-                    <Input 
+                    <Input
                       type="email"
                       placeholder="Email Address"
                       value={contactForm.email}
-                      onChange={(e) => setContactForm({...contactForm, email: e.target.value})}
+                      onChange={(e) => setContactForm({ ...contactForm, email: e.target.value })}
                       required
                       className="h-12"
                     />
                   </div>
                   <div>
-                    <Input 
+                    <Input
                       placeholder="Phone Number"
                       value={contactForm.phone}
-                      onChange={(e) => setContactForm({...contactForm, phone: e.target.value})}
+                      onChange={(e) => setContactForm({ ...contactForm, phone: e.target.value })}
                       className="h-12"
                     />
                   </div>
                   <div>
-                    <Input 
+                    <Input
                       placeholder="Company Name"
                       value={contactForm.company}
-                      onChange={(e) => setContactForm({...contactForm, company: e.target.value})}
+                      onChange={(e) => setContactForm({ ...contactForm, company: e.target.value })}
                       className="h-12"
                     />
                   </div>
                   <div>
-                    <Textarea 
+                    <Textarea
                       placeholder="Your Message"
                       value={contactForm.message}
-                      onChange={(e) => setContactForm({...contactForm, message: e.target.value})}
+                      onChange={(e) => setContactForm({ ...contactForm, message: e.target.value })}
                       required
                       rows={4}
                       className="resize-none"
@@ -449,9 +450,11 @@ const Home = () => {
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
               <div className="flex items-center space-x-3 mb-4">
-                <div className="flex items-center justify-center w-10 h-10 bg-blue-900 rounded-lg">
-                  <Shield className="w-6 h-6 text-white" />
-                </div>
+                <img
+                  src="/Tech_Vimal_International.webp"
+                  alt="Tech Vimal International Logo"
+                  className="w-10 h-10 object-contain"
+                />
                 <div>
                   <h3 className="font-bold">Tech Vimal</h3>
                   <p className="text-xs text-slate-400">International Certification</p>
